@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Pacifico&family=Roboto:wght@100;400&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height: 1.4;
+    background-image: url("img/florish.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+}
+
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    color:rgb(227, 157, 7);
+    font-size:50px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+h2 {
+    color:rgb(202, 162, 41);
+    font-size:22px;
+    text-transform: uppercase;
+    background-color: rgb(224, 224, 224);
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+
+}
+h3 {
+    color:rgb(45, 41, 39);
+    font-size:18px;
+    text-transform: uppercase;
+    margin-top:20px ;
+}
+q{
+    font-size:18px;
+}
+strong{
+    color: tomato;
+    font-weight: lighter;
+
+}
+code{
+  font-family: 'Courier New', Courier, monospace;  
+}
+cite{
+    font-style: ;
+}
+img{
+   border-radius: 50px;
+}
+ul{
+    list-style-image: url('img/puceplus.png');
+}
+
+.avantage{
+    list-style-image: url('img/imagespuce.jpg');
+}
+
+ul.navigation li{
+    display: inline;
+    padding: 5px;
+    background-color: rgb(119, 16, 16);
+}
+
+ul.navigation li a{
+    color:bisque;
+}
+    
+ul.navigation li a:hover{
+    color:rgb(0, 0, 0);
+}
+
+ul.navigation{
+    text-align: center;
+}
+#ressources{
+
+}
+
+div.droite{
+    width: 50%;
+    background-color: blue;
+}
+
+.nav li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #333;
+
+
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(70, 38, 38);
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: rgb(0, 107, 128);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(21, 60, 12);
+}
+
+/* selected link */
+a:active {
+    color: rgb(0, 0, 0);
+}

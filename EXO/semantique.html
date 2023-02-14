@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>La Sémantique HTML</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+
+    <body>
+        <h1>La sémantique HTML</h1>
+            <ul class="navigation">
+                <li><a href="semantique.html" target="_self">Sémantiques</a></li>
+                <li><a href="p2-cours_Css.html" target="_self">Css</a></li>
+                <li><a href="semantique.html#ressources" target="_self">Ressources</a></li>
+            </ul>
+        <h2>Qu'est-ce que la sémantique ?</h2>
+        <q>La sémantique est tout ce qui concerne l'étude scientifique du sens des unités linguistiques et de leurs combinaisons.</q>
+        <cite>Dictionnaire Larousse 1994</cite>
+        <p>La sémantique web, c'est à peu de choses près considérer le sens des balises, étudier leur rôle dans le code en ne considérant en aucun moment l'effet d'une balise sur l'affichage.
+        La sémantique c'est aussi simple que ça, il suffit d'utiliser toute la bibliothèque de balises offerte par le langage, et ce à bon escient. Avec cette liste, vous avez appris 90 % des balises <abbr title="Hyper Text Markup Langage">HTML</abbr> parmi les plus utilisées.
+        Pour voir la sémantique de sa page il suffit de débrancher son <abbr title="Cacading Style Sheet">CSS</abbr>. Si votre site est illisible sans <abbr title="Cacading Style Sheet">CSS</abbr> c'est-à-dire par exemple qu'un titre est écrit de la même façon que du texte normal, c'est qu'il y a un gros problème…</p>
+        
+        <h2>Quels sont les avantages ?</h2>
+        Les avantages sont nombreux. Ils permettent souvent un <strong>gain de temps</strong> non négligeable.
+        
+        Respecter une bonne sémantique permet :
+        <ul class="avantage">
+            <li>d'obtenir un <strong>code beaucoup plus cohérent</strong>, plus logique, plus structuré, et donc plus facile à remanier, car chaque balise ayant une fonction, on sait exactement ce qu'elle désigne : les changements sont donc plus rapides à effectuer sur votre page</li>
+            <li>de <strong>limiter l'abondance de class et id</strong>. On se perd même parfois : c'est une source d'agacement et une perte de temps</li>
+            <li>de <strong>mieux se faire référencer</strong> par des moteurs de recherche, tel Google. En effet, une page remplie de div paraît neutre aux moteurs
+            de faciliter le travail au niveau du <abbr title="Cacading Style Sheet">CSS</abbr>.</li>
+            <li>De <strong>respecter les personnes handicapées</strong> qui possèdent des navigateurs analysant la sémantique des balises.</li>
+        </ul>
+        Si votre page est remplie de <code>div</code>, elle n'aura aucun sens pour le navigateur, et la personne sera dans l'impossibilité de visiter votre site. Par personnes « handicapées », il faut entendre tous ceux qui souffrent d'un handicap mineur ou majeur, des malvoyants aux aveugles, etc. Le même problème se pose pour les <abbr title="personal digital assistant">PDA</abbr> et autres mobiles, car une bonne partie des styles <abbr title="Cacading Style Sheet">CSS</abbr> est, pour des raisons d'affichage, désactivée.
+        
+        
+        <h2>Les balises html de la sémantique</h2>
+        
+        <h3>Les balises rédactionnelles</h3>
+        Elles permettent la structuration de contenu rédactionnels, c’est à dire, tout le contenu textuel. Les paragraphes <code>(p)</code>, Les titres <code>(hn)</code>, les mots mise en avant <code>(strong)</code>, Les liste à puces <code>(ul ou ol)</code>
+        
+        <h3>Les éléments de découpage sémantiques</h3>
+        Les éléments sémantiques sont une des innovations significatives en <abbr title="Hyper Text Markup Langage version 5">HTML 5</abbr>. Avant leur apparition, toutes les balises des pages Web étaient créées à l'aide des éléments
+        , auxquels étaient attribués des identificateurs <code>(id)</code> ou des classes <code>(class)</code>. Le <abbr title="Hyper Text Markup Langage version 5">HTML 5</abbr> a amené de nouvelles balises sémantiques en remplacement <code>(header, footer, nav, article)</code>
+        
+    <br><a href="https://ronan-hello.fr/series/html/balises-semantiques-html" target="_blank">En savoir plus</a>
+        
+        <h2>Quelques outils de validation</h2>
+        
+        <h3>Les outils de la validation en ligne</h3>
+        <ul>
+            <li><a href="http://validator.w3.org" target="_blank">validator.w3.org</a></li>
+            <li><a href="http://w3qc.org/validateur/" target="_blank">w3qc.org</a></li>
+            <li><a href="http://www.validome.org/" target="_blank">validome.org</a></li>
+        </ul>
+   
+        <h3>Logiciel simulation handicap</h3>
+        Lynx analyse une page web comme le feraient les logiciels de synthèse vocale et les logiciels « braille », deux types de logiciels utilisés par les aveugles ! Site Lynx (http://lynx.browser.org/)
+        <div class="droite">
+        <h2>Articles connexes sur la sémantique</h2>
+        <ul>
+            <li><a href="https://openweb.eu.org/articles/respecter_semantique" target="_blank">Respecter la sémantiquetarget</a></li>
+            <li><a href="http://www.pompage.net/traduction/semantique-html-et-architecture" target="_blank">La sémantique</a></li>
+            <li><a href="https://www.w3c.fr/standards" target="_blank">Spécification HTML du W3C</a></li>
+        </ul>
+        </div>
+
+        <div class="droite">
+            <h2 id="ressources">Les sites ressources d'apprentissage.</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com" target="_blank">W3schools</a></li>
+                <li><a href="https://www.codecademy.com" target="_blank">Code Academy</a></li>
+            </ul>
+        </div>
+    
+
+    </body>
+
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Feuille de style CSS de base</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Feuille de style CSS de base</h1>
+<ul class="navigation">
+  <li><a href="semantique.html" target="_self">Sémantiques</a></li>
+  <li><a href="p2-cours_Css.html" target="_self">Css</a></li>
+  <li><a href="semantique.html#ressources" target="_self">Ressources</a></li>
+</ul>
+
+<h2>Structure de base</h2>
+<p>Pour chaque déclaration, la structure est toujours la même&nbsp;:</p>
+<pre>sélecteur {
+       propriété : valeur;
+}</pre>
+<p>Le <strong>sélecteur</strong>, c'est la <a href="http://css.mammouthland.net/balises-html.php">balise (X)HTML</a> (<code>body</code> ; <code>h1</code> ; <code>p</code>, etc.)&nbsp;;
+  <br>
+  La <strong>propriété</strong>, c'est l'attribut qu'on veut appliquer (<code>font</code> ; <code>background</code> ; <code>margin</code> ; etc.)&nbsp;
+  <br>
+  La <strong>valeur</strong>  précise les caractéristiques de la propriété</p>
+
+<h3>Exemple de feuille de style</h3>
+	
+	<p><em>Fonctionne avec&nbsp;:</em></p>
+	<ul> 
+		<li>Tous les navigateurs graphiques</li>
+	</ul>
+<p><em>Propriétés utilisées&nbsp;:</em></p>
+<ul>
+		<li>background-color</li>
+		<li>color</li>
+		<li>font-family ; font-size</li>
+		<li>padding</li>
+		<li>margin</li>
+		<li>text-align ; text-decoration</li>
+</ul>
+<p>A noter que les couleur sont ici sous la forme "white, black, blue" etc... pour plus de lisibilité mais qu'il convient plutôt d'utiliser les valeurs hexadécimales qui vont de <code>#000000</code> (noir) à <code>#ffffff</code> (blanc)</p>
+
+<p>Les tailles des polices de caractère sont ici exprimées en <code>%</code>, mais on peut aussi utiliser <code>em</code> qui est aussi une unité de longueur relative à privilégier (pour des raisons d'homogénéité d'affichage et d'accessibilité) aux unités absolues telles que les <code><acronym title="point">pt</acronym></code> ou les <code><acronym title="picas">pc</acronym></code>.<br />
+À noter que bien que les <code><acronym title="pixels">px</acronym></code> soient une unité relative, ils sont aussi à éviter car <abbr title="Microsoft Internet Explorer">MSIE</abbr> les interprète comme unité absolue...</p>
+
+<p>Pour que les couleurs des liens changent selon leur état (non visité, visité, survolé, actif, ayant le focus), on utilise des <strong>pseudo-classes</strong> qui se déclarent par <code>:link</code>, <code>:visited</code>, <code>:hover</code>, <code>:active</code> et <code>:focus</code>. Il est important de respecter cet ordre de déclarations.</p> 
+
+<p>On commence une feuille de style en général par un "reset" pour mettre toutes les marges à zéro (intérieures <code>padding</code> et extérieures <code>margin</code>). On peut aussi lier la page à une feuille de style importée type <code>init.css</code>.<br>
+Cela doit permettre d'avoir tous les navigateurs avec, à peu près, le même état de départ...</p>
+
+<h4>Code CSS</h4>
+
+<pre>
+/* Initialisation voir init.css import */
+body {<br>	          background-color: #F1F1F1;<br>	          font-family: 'Open Sans', sans-serif;<br>	          font-size: 0.9em;<br>	          line-height: 1.3em;<br>	          margin-top: 50px;<br>	          margin-bottom: 50px;<br>	          width:60%;<br>	          margin-right: auto;<br>	          margin-left: auto;<br>}
+
+/* Exemples gestion des titrages ... % ou em */
+h1 {
+          font-size: 200%; 
+          color: navy; 
+          text-align: center;
+ }
+h2 {
+          font-size: 150%; 
+          color: red; 
+          padding-left: 15px;
+ }
+
+/* couleur liste et paragraphe ...*/
+code, pre{<br>          	background-color: white;<br>          	font-family: &quot;Times New Roman&quot;, Times, serif;<br>          	color: #666;<br>}
+
+/* Liens et pseudo class ...*/
+          a:link, a:hover {<br>          color: #666;<br>} 
+a:visited {
+          color: gray;
+ }
+a:hover {
+          background-color: white;
+}
+a:active, a:focus {
+          color: #000;
+}</pre>
+<h2>Padding et margin</h2>
+<pre>h2 {
+   font-size: 18px;
+   background-color: #FFFFFF;
+   display: block;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}</pre>
+<br>
+<ul class="listlink">
+  <li><a href="http://css.mammouthland.net/margin-padding-css.php" target="_blank">
+  CSS 2 : Le Padding et Margin </a></li>
+</ul>
+<h2>Les Fonts</h2>
+<ul class="listlink">
+  <li><a href="https://www.e-monsite.com/pages/tutoriels/configuration-avancee-du-site/ajouter-une-police-externe-a-son-site-avec-des-web-fonts.html" target="_blank">CSS 2: Les web Fonts</a></li>
+  <li><a href="http://css.mammouthland.net/css3/font-face.php" target="_blank">CSS 3 : déclarer une police de caractère non standard avec @font-face</a></li>
+</ul>
+</body>
+</html>

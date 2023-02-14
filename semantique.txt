@@ -1,0 +1,52 @@
+La sémantique html
+
+Qu'est-ce que la sémantique ?
+"La sémantique est tout ce qui concerne l'étude scientifique du sens des unités linguistiques et de leurs combinaisons."
+Dictionnaire Larousse 1994
+La sémantique web, c'est à peu de choses près considérer le sens des balises, étudier leur rôle dans le code en ne considérant en aucun moment l'effet d'une balise sur l'affichage.
+La sémantique c'est aussi simple que ça, il suffit d'utiliser toute la bibliothèque de balises offerte par le langage, et ce à bon escient. Avec cette liste, vous avez appris 90 % des balises HTML parmi les plus utilisées.
+Pour voir la sémantique de sa page il suffit de débrancher son CSS. Si votre site est illisible sans CSS, c'est-à-dire par exemple qu'un titre est écrit de la même façon que du texte normal, c'est qu'il y a un gros problème…
+
+Quels sont les avantages ?
+Les avantages sont nombreux. Ils permettent souvent un gain de temps non négligeable.
+
+Respecter une bonne sémantique permet :
+	d'obtenir un code beaucoup plus cohérent, plus logique, plus structuré, et donc plus facile à remanier, car chaque balise ayant une fonction, on sait exactement ce qu'elle désigne : les changements sont donc plus rapides à effectuer sur votre page
+	de limiter l'abondance de class et id. On se perd même parfois : c'est une source d'agacement et une perte de temps
+	de mieux se faire référencer par des moteurs de recherche, tel Google. En effet, une page remplie de div paraît neutre aux moteurs
+	de faciliter le travail au niveau du CSS.
+	De respecter les personnes handicapées qui possèdent des navigateurs analysant la sémantique des balises. 
+
+Si votre page est remplie de div, elle n'aura aucun sens pour le navigateur, et la personne sera dans l'impossibilité de visiter votre site. Par personnes « handicapées », il faut entendre tous ceux qui souffrent d'un handicap mineur ou majeur, des malvoyants aux aveugles, etc. Le même problème se pose pour les PDA et autres mobiles, car une bonne partie des styles CSS est, pour des raisons d'affichage, désactivée.
+
+
+Les balises html de la sémantique
+
+Les balises rédactionnelles
+Elles permettent la structuration de contenu rédactionnels, c’est à dire, tout le contenu textuel. Les paragraphes (p), Les titres (hn), les mots mise en avant (strong), Les liste à puces (ul ou ol)
+
+Les éléments de découpage sémantiques
+Les éléments sémantiques sont une des innovations significatives en HTML5. Avant leur apparition, toutes les balises des pages Web étaient créées à l'aide des éléments
+, auxquels étaient attribués des identificateurs (id) ou des classes (class). Le html 5 a amené de nouvelles balises sémantiques en remplacement (header, footer, nav, article) 
+En savoir plus https://ronan-hello.fr/series/html/balises-semantiques-html
+
+Quelques outils de validation
+
+Les outils de la validation en ligne
+	http://validator.w3.org
+	http://w3qc.org/validateur/
+	http://www.validome.org/
+
+
+Logiciel simulation handicap
+Lynx analyse une page web comme le feraient les logiciels de synthèse vocale et les logiciels « braille », deux types de logiciels utilisés par les aveugles ! Site Lynx (http://lynx.browser.org/)
+
+Articles connexes sur la sémantique
+	Respecter la sémantique  (https://openweb.eu.org/articles/respecter_semantique/)
+	La sémantique (http://www.pompage.net/traduction/semantique-html-et-architecture)
+	Spécification HTML du W3C (https://www.w3c.fr/standards/)
+
+Les sites ressources d'apprentissage.
+	W3schools (https://www.w3schools.com) 
+	Code Academy (https://www.codecademy.com/)
+	
